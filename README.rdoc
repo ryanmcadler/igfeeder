@@ -4,4 +4,4 @@ A simple app that aggregates Instagram and Twitter.  It's intended to be for peo
 
 == Getting Started
 
-To get started, just clone the project and modify the application layout.
+To get started, just clone the project and modify the application layout.  There's not much there at this point.
