@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>RyanMcAdler.com</title>
+  <!--[if lt IE 9]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js" type="text/javascript"></script>
+  <![endif]-->
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+  <div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+      <div class="container">
+        <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </a>
+        <a class="brand" href="#">RyanMcAdler.com</a>
+        <!--<div class="nav-collapse">
+          <ul class="nav">
+          </ul>
+        </div>-->
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="row">
+      <div class="span9"><%= yield %></div>
+      <div class="span3">
+				<div id="aboutme">
+	        <h3>About Me</h3>
+	        I'm a Rails developer currently in Bend, Oregon.  I love building cool stuff, the outdoors and photography.  I don't really have time to blog, so this is my life through Instagram and tweets.  It's pretty simple, but you can clone this at GitHub.
+					</h2>
+					<div id="tweets">
+						<h3>Tweets</h3>
+						<ul>
+						<% @tweets.each do |tweet| %>
+							<li><%= tweet.created_at.strftime("%m/%d/%Y %I:%M%p") %>: <%= auto_link(tweet.text, :html => { :target => '_blank' }) %></li>
+						<% end %>
+							<li><a href='http://twitter.com/ryanmcadler' target='_blank'>More...</a></li>
+						</ul>
+					</div>
+      </div>
+    </div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,10 @@
+#tweets {
+	margin-top: 10px;
+}
+#tweets ul {
+	margin: 0;
+}
+#tweets li {
+	list-style-type: none;
+	padding-bottom: 5px;
+}
