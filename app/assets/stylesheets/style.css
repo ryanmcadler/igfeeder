@@ -8,3 +8,15 @@
 	list-style-type: none;
 	padding-bottom: 5px;
 }
+
+.imageContainer {
+	margin-bottom: 15px;
+}
+
+.backToTop {
+	margin-bottom: 25px;
+}
+
+.imageCaption {
+	padding: 5px;
+}

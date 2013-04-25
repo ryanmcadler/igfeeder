@@ -1,1 +1,9 @@
-Under construction...
+<h3>Recent Instagram</h3>
+<% @instagramfeed.each do |post| %>
+	<div class="imageContainer">
+		<div class="image"><%= image_tag(post[:images][:standard_resolution][:url], :class => "img-polaroid") %></div>
+		<div class="imageCaption"><%= post[:caption][:text] %></div>
+	</div>
+<% end %>
+
+<a href="#top" title="Scroll back to the top" class="btn btn-mini backToTop">Back to the top</a>

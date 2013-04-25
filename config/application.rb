@@ -55,5 +55,9 @@ module Igfeeder
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+    
+    TWITTER_HANDLE = "ryanmcadler"
+    INSTAGRAM_USER_ID = 9316034
+    
   end
 end

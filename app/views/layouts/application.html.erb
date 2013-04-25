@@ -11,6 +11,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
+	
   <div class="navbar navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -30,22 +31,23 @@
 
   <div class="container">
     <div class="row">
-      <div class="span9"><%= yield %></div>
       <div class="span3">
 				<div id="aboutme">
 	        <h3>About Me</h3>
-	        I'm a Rails developer residing in Bend, Oregon.  I love the outdoors, photography and building cool stuff.  I don't really have time to blog, so this is my life through Instagram and tweets.  It's pretty simple, but if you want an app like this for yourself, you can clone it at <a href='https://github.com/ryanmcadler/igfeeder' target='_blank'>GitHub</a>.
+	        I'm a Rails developer residing in Bend, Oregon.  I love the outdoors, photography and building cool stuff.  I don't really have time to blog, so this is my life through Instagram and tweets.  You can clone this app from <a href='https://github.com/ryanmcadler/igfeeder' target='_blank'>here</a>.
 					</h2>
 					<div id="tweets">
 						<h3>Tweets</h3>
 						<ul>
-						<% @tweets.each do |tweet| %>
-							<li><b><%= tweet.created_at.strftime("%m/%d/%Y %I:%M%p") %></b>: <%= auto_link(tweet.text, :html => { :target => '_blank' }) %></li>
-						<% end %>
+							<% @tweets.each do |tweet| %>
+								<li><b><%= tweet.created_at.strftime("%m/%d/%Y %I:%M%p") %></b>: <%= auto_link(tweet.text, :html => { :target => '_blank' }) %></li>
+							<% end %>
 							<li><a href='http://twitter.com/ryanmcadler' target='_blank'>More...</a></li>
 						</ul>
 					</div>
-      </div>
+      	</div>
+			</div>
+			<div class="span9"><%= yield %></div>
     </div>
 	</div>
 </body>

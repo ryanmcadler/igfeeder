@@ -4,4 +4,12 @@ A simple app that aggregates Instagram and Twitter.  It's intended to be for peo
 
 == Getting Started
 
-To get started, just clone the project and modify the application layout.  There's not much there at this point.  You change your twitter handle in the application controller (currently there's only one method).
+To get started, just clone the project and modify the application layout.  Change your Twitter handle and Instagram user id in the application config file. Register your application with Instagram to obtain a device id, which you can use to generate an access token; once these values have been obtained, modify the initializer accordingly.
+
+== Resources
+
+Obtain an Instagram access token:
+http://jelled.com/instagram/access-token
+
+Get your Instagram user id:
+http://jelled.com/instagram/lookup-user-id
