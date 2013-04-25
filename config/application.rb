@@ -59,6 +59,7 @@ module Igfeeder
     # Config variables...
     TWITTER_HANDLE = ""
     INSTAGRAM_USER_ID = 0
+    BIO = "My name is Ryan McAdler.  I'm a Rails developer residing in Bend, Oregon.  I love the outdoors, photography and building cool stuff.  I don't really have time to blog, so this is my life through Instagram and tweets.  <a href='https://github.com/ryanmcadler/igfeeder' target='_blank'>Clone/Fork this app at Github.</a>."
     
   end
 end
