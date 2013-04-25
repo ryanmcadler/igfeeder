@@ -4,7 +4,7 @@ A simple app that aggregates Instagram and Twitter.  It's intended to be for peo
 
 == Getting Started
 
-To get started, just clone the project and modify the application layout.  Change your Twitter handle and Instagram user id in the application config file. Register your application with Instagram to obtain a device id, which you can use to generate an access token; once these values have been obtained, modify the Instagram (instagram.rb) initializer accordingly. Do the same for the  Twitter (twitter.rb) initializer.
+To get started, just clone the project and modify the application layout to your desire.  Change your Twitter handle, Instagram user id, and bio in the application config file. Register your application with Instagram to obtain a device id, which you can use to generate an access token; once these values have been obtained, modify the Instagram (instagram.rb) initializer accordingly. Repeat the process for the  Twitter (twitter.rb) initializer.
 
 == Resources
 
